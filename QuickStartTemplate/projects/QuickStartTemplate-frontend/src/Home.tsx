@@ -31,10 +31,8 @@ const Home: React.FC<HomeProps> = () => {
       {/* Navbar */}
       <nav className="w-full flex items-center justify-between px-6 py-4 bg-white border-b border-gray-200 shadow-sm sticky top-0 z-20">
         <div className="flex items-center gap-2">
-          <div className="h-8 w-8 flex items-center justify-center rounded-lg bg-indigo-600 text-white text-sm font-semibold">
-            A
-          </div>
-          <div className="font-semibold text-gray-800 tracking-wide">Algorand dApp Template</div>
+          <div className="h-8 w-8 flex items-center justify-center rounded-lg bg-indigo-600 text-white text-sm font-semibold">A</div>
+          <div className="font-semibold text-gray-800 tracking-wide">AlgoLEarn</div>
         </div>
 
         <button
@@ -50,15 +48,14 @@ const Home: React.FC<HomeProps> = () => {
       <header className="flex flex-col items-center text-center py-16 px-6">
         <div className="inline-flex items-center gap-2 bg-indigo-50 text-indigo-700 border border-indigo-100 rounded-full px-4 py-1 text-sm font-medium mb-5">
           <AiOutlineWallet />
-          <span>Algorand Universal Actions</span>
+          <span>Powered by Algorand</span>
         </div>
-        <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-3">
-          Build Faster with a Universal dApp Surface
-        </h1>
+        <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-3">Learn at $1. Earn fairly. Verified Skills.</h1>
         <p className="text-gray-600 max-w-xl mb-8">
-          Trigger common Algorand actions — payments, NFT minting, token creation, and contract calls — from a clean, unified interface.
+          AlgoLearn is reimagining how young learners and educators grow. We combine accessibility and affordability with the trust of
+          Algorand blockchain to create a learning experience that rewards everyone. Learn confidently. Earn transparently. Grow
+          sustainably.
         </p>
-
         {!activeAddress && (
           <button
             onClick={() => setOpenWalletModal(true)}
@@ -76,10 +73,7 @@ const Home: React.FC<HomeProps> = () => {
             <h2 className="text-xl font-semibold mb-6 text-gray-800">Available Actions</h2>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-              <button
-                className={`${cardBase} flex flex-col items-start gap-3 p-5`}
-                onClick={() => setOpenPaymentModal(true)}
-              >
+              <button className={`${cardBase} flex flex-col items-start gap-3 p-5`} onClick={() => setOpenPaymentModal(true)}>
                 <div className="p-3 rounded-lg bg-indigo-100 text-indigo-700">
                   <AiOutlineSend className={iconStyle} />
                 </div>
@@ -89,10 +83,7 @@ const Home: React.FC<HomeProps> = () => {
                 </div>
               </button>
 
-              <button
-                className={`${cardBase} flex flex-col items-start gap-3 p-5`}
-                onClick={() => setOpenMintModal(true)}
-              >
+              <button className={`${cardBase} flex flex-col items-start gap-3 p-5`} onClick={() => setOpenMintModal(true)}>
                 <div className="p-3 rounded-lg bg-pink-100 text-pink-700">
                   <AiOutlineStar className={iconStyle} />
                 </div>
@@ -102,10 +93,7 @@ const Home: React.FC<HomeProps> = () => {
                 </div>
               </button>
 
-              <button
-                className={`${cardBase} flex flex-col items-start gap-3 p-5`}
-                onClick={() => setOpenTokenModal(true)}
-              >
+              <button className={`${cardBase} flex flex-col items-start gap-3 p-5`} onClick={() => setOpenTokenModal(true)}>
                 <div className="p-3 rounded-lg bg-emerald-100 text-emerald-700">
                   <BsArrowUpRightCircle className={iconStyle} />
                 </div>
@@ -115,10 +103,7 @@ const Home: React.FC<HomeProps> = () => {
                 </div>
               </button>
 
-              <button
-                className={`${cardBase} flex flex-col items-start gap-3 p-5`}
-                onClick={() => setOpenAppCallsModal(true)}
-              >
+              <button className={`${cardBase} flex flex-col items-start gap-3 p-5`} onClick={() => setOpenAppCallsModal(true)}>
                 <div className="p-3 rounded-lg bg-blue-100 text-blue-700">
                   <AiOutlineDeploymentUnit className={iconStyle} />
                 </div>
